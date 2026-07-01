@@ -1,0 +1,20 @@
+[gd_scene format=4 uid="uid://c3s61qkxxifra"]
+
+[ext_resource type="PackedScene" uid="uid://cga5iijuh8gus" path="res://Scenes/Object/coin.tscn" id="2_5m2vt"]
+[ext_resource type="PackedScene" uid="uid://b1y6eysmgglaf" path="res://Scenes/Characters/player.tscn" id="2_mrb5k"]
+[ext_resource type="TileSet" uid="uid://dhptrcm8n70wj" path="res://Assets/Objects/objects.tres" id="3_mrb5k"]
+
+[node name="Objects" type="Node2D" unique_id=2076981842]
+y_sort_enabled = true
+position = Vector2(-433, -168)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=357217084]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAkAAwAAAAAAAIAAAAmAAwAAAABAAIAAAAiAAwAAAACAAIAAAAoAAwAAAADAAIAAAAiABAAAAAFAAEAAAAkABAAAAAGAAEAAAAmABAAAAAHAAEAAAAoABAAAAAIAAEAAAArAA4AAAAJAAEAAAA=")
+tile_set = ExtResource("3_mrb5k")
+
+[node name="Coin" parent="." unique_id=85182894 instance=ExtResource("2_5m2vt")]
+position = Vector2(489, 220)
+
+[node name="Player" parent="." unique_id=183711958 instance=ExtResource("2_mrb5k")]
+position = Vector2(524, 220)

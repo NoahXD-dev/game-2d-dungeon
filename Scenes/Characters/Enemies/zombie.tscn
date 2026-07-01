@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c4hxhgvje202w"]
+
+[ext_resource type="Script" uid="uid://d3xfgb40bt2g6" path="res://Scripts/Characters/zombie.gd" id="1_hk1vj"]
+[ext_resource type="SpriteFrames" uid="uid://duwwl7g7r2mxf" path="res://Assets/Character/Zombie/zombie_sprite_frames.tres" id="2_7sk10"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_al8ar"]
+radius = 3.0
+
+[node name="Zombie" type="CharacterBody2D" unique_id=1984377480 groups=["enemy"]]
+y_sort_enabled = true
+collision_layer = 8
+collision_mask = 10
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_hk1vj")
+speed = 80.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2047307924]
+y_sort_enabled = true
+position = Vector2(0, -5)
+sprite_frames = ExtResource("2_7sk10")
+animation = &"idle_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1240715354]
+y_sort_enabled = true
+shape = SubResource("CircleShape2D_al8ar")
+debug_color = Color(0.8756944, 0.00042624594, 0.8363707, 0.41960785)
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=468636351]
+
+[node name="Timer" type="Timer" parent="." unique_id=1413589307]
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=2093864024]
+path_desired_distance = 10.0
+path_max_distance = 50.0
+avoidance_enabled = true
+radius = 3.0
+debug_enabled = true
+debug_path_custom_color = Color(0.55531013, 0.5200199, 5.7756904e-07, 1)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
