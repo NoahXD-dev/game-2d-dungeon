@@ -1,0 +1,14 @@
+res://Scenes/Characters/player.tscn
+res://Assets/Character/Zombie/zombie_sprite_frames.tres
+res://Assets/Tiles/mazmorra.tres
+res://Assets/Character/Asha/Black/Black Asha - Falling.png
+res://Assets/Character/Asha/Black/Black Asha - falling.png
+res://Scripts/Characters/player.gd
+res://Scenes/Characters/Enemies/zombie.tscn
+res://Scripts/Characters/player_control.gd
+res://Scripts/Components/state_base.gd
+res://Scripts/Components/state_machine.gd
+res://Scripts/Characters/player_idle.gd
+res://Assets/Character/Asha/asha_sprite_frames.tres
+res://Scripts/Characters/PlayerStates/player_state_idle.gd
+res://Scripts/Characters/PlayerStates/player_state_walk.gd
