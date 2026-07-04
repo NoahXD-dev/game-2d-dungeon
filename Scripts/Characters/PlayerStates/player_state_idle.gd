@@ -7,8 +7,6 @@ func on_physics_process(_delta: float) -> void:
 		state_machine.change_to("PlayerStateWalk")
 		return
 	
-	print("color ", controlled_node.color)
-	print("last_direction ", controlled_node.last_direction)
-	controlled_node.animated_sprite_2d.play("idle_" + controlled_node.color + "_" + controlled_node.last_direction)
+	controlled_node.update_animation("idle")
 	controlled_node.velocity = Vector2.ZERO
 	controlled_node.move_and_slide()

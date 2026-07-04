@@ -24,10 +24,10 @@ waypoints = [NodePath("../../Waypoints/Waypoint"), NodePath("../../Waypoints/Way
 [node name="Waypoints" type="Node2D" parent="." unique_id=1651763704]
 
 [node name="Waypoint" type="Marker2D" parent="Waypoints" unique_id=668087489]
-position = Vector2(334, 206)
+position = Vector2(273, 207)
 
 [node name="Waypoint2" type="Marker2D" parent="Waypoints" unique_id=167926938]
-position = Vector2(402, 296)
+position = Vector2(367, 208)
 
 [node name="Waypoint3" type="Marker2D" parent="Waypoints" unique_id=571321837]
 position = Vector2(472, 208)

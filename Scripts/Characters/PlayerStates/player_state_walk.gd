@@ -18,6 +18,7 @@ func on_physics_process(_delta: float) -> void:
 		else:
 			controlled_node.last_direction = "up"
 	
-	controlled_node.animated_sprite_2d.play("walk_" + controlled_node.color + "_" + controlled_node.last_direction)
+	controlled_node.update_animation("walk")
+	# controlled_node.animated_sprite_2d.play("walk_" + controlled_node.color + "_" + controlled_node.last_direction)
 	controlled_node.velocity = input_direction * controlled_node.speed
 	controlled_node.move_and_slide()

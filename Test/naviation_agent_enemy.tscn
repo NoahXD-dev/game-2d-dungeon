@@ -21,8 +21,6 @@ y_sort_enabled = true
 
 [node name="Zombie" parent="Enemies" unique_id=1984377480 instance=ExtResource("2_qg1mx")]
 position = Vector2(271, 262)
-angle_vision = 120.0
-lenght_cone_vision = 80.0
 
 [node name="Player" parent="." unique_id=1432425149 instance=ExtResource("3_a656t")]
 position = Vector2(218, 251)

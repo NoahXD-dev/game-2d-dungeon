@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://d3xfgb40bt2g6" path="res://Scripts/Characters/zombie.gd" id="1_hk1vj"]
 [ext_resource type="SpriteFrames" uid="uid://duwwl7g7r2mxf" path="res://Assets/Character/Zombie/zombie_sprite_frames.tres" id="2_7sk10"]
+[ext_resource type="PackedScene" uid="uid://cqmtmt2t3igas" path="res://Components/state_machine.tscn" id="3_hk1vj"]
+[ext_resource type="Script" uid="uid://dh1bv28buqpc0" path="res://Scripts/Characters/Enemies/enemy_state_patrol.gd" id="4_8qepe"]
+[ext_resource type="Script" uid="uid://xpdv266gchjh" path="res://Scripts/Characters/Enemies/enemy_state_chase.gd" id="5_xyh2p"]
+[ext_resource type="Script" uid="uid://bmrbqb1ahon7v" path="res://Scripts/Characters/Enemies/enemy_state_investigate.gd" id="6_8qepe"]
+[ext_resource type="Script" uid="uid://bbq1ofj7o8su" path="res://Scripts/Characters/Enemies/enemy_state_idle.gd" id="7_xyh2p"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_al8ar"]
 radius = 3.0
@@ -14,6 +19,8 @@ motion_mode = 1
 wall_min_slide_angle = 0.0
 script = ExtResource("1_hk1vj")
 speed = 80.0
+angle_vision = 120.0
+lenght_cone_vision = 80.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2047307924]
 y_sort_enabled = true
@@ -33,9 +40,29 @@ debug_color = Color(0.8756944, 0.00042624594, 0.8363707, 0.41960785)
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=2093864024]
 path_desired_distance = 10.0
 path_max_distance = 50.0
+navigation_layers = 3
 avoidance_enabled = true
 radius = 3.0
 debug_enabled = true
 debug_path_custom_color = Color(0.55531013, 0.5200199, 5.7756904e-07, 1)
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="StateMachine" parent="." unique_id=1751848432 node_paths=PackedStringArray("default_state") instance=ExtResource("3_hk1vj")]
+default_state = NodePath("EnemyStatePatrol")
+
+[node name="EnemyStatePatrol" type="Node" parent="StateMachine" unique_id=239329833]
+script = ExtResource("4_8qepe")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[node name="EnemyStateChase" type="Node" parent="StateMachine" unique_id=544407187]
+script = ExtResource("5_xyh2p")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[node name="EnemyStateInvestigate" type="Node" parent="StateMachine" unique_id=1895986546]
+script = ExtResource("6_8qepe")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[node name="EnemyStateIdle" type="Node" parent="StateMachine" unique_id=1980631534]
+script = ExtResource("7_xyh2p")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[connection signal="timeout" from="Timer" to="StateMachine" method="_on_timer_timeout"]

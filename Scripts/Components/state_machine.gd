@@ -18,7 +18,7 @@ func _state_default_start() -> void:
 
 # Funcion que prepara las variables para el nuevo estado y lanza el start
 func _state_start() -> void:
-	print("StateMachine ", controlled_node.name, "start state ", current_state.name)
+	#print("StateMachine ", controlled_node.name, "start state ", current_state.name)
 	
 	current_state.controlled_node = controlled_node
 	current_state.state_machine = self
@@ -50,3 +50,7 @@ func _unhandled_input(event: InputEvent) -> void:
 func _unhandled_key_input(event: InputEvent) -> void:
 	if current_state and current_state.has_method("on_unhandled_key_input"):
 		current_state.on_unhandled_key_input(event)
+
+func _on_timer_timeout() -> void:
+	if current_state and current_state.has_method("on_timer_timeout"):
+		current_state.on_timer_timeout()

@@ -1,10 +1,10 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1783045451
+::res://::1783113954
 icon.svg::CompressedTexture2D::1162303183147795495::1782510460::1782510474::1::::<><><>0<>0<>e5e34f6b644e55ae69c0f4955d68fe50<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1782591201
 ::res://Assets/Character/::1783042259
-::res://Assets/Character/Asha/::1783043665
-asha_sprite_frames.tres::SpriteFrames::8381080463160097687::1783043665::0::1::::<><><>0<>0<><>::uid://dibqpcfhvrl1x::::res://Assets/Character/Asha/Black/Black Asha - idle.png<>uid://c5qgb544q176l::::res://Assets/Character/Asha/Black/Black Asha - walk.png
+::res://Assets/Character/Asha/::1783047545
+asha_sprite_frames.tres::SpriteFrames::8381080463160097687::1783047545::0::1::::<><><>0<>0<><>::uid://dibqpcfhvrl1x::::res://Assets/Character/Asha/Black/Black Asha - idle.png<>uid://c5qgb544q176l::::res://Assets/Character/Asha/Black/Black Asha - walk.png
 ::res://Assets/Character/Asha/Black/::1783042804
 Black Asha - attack 1.png::CompressedTexture2D::45027003774177113::1783042301::1783042617::1::::<><><>0<>0<>fdf5f67dca09629990f0018886522ee1<>res://.godot/imported/Black Asha - attack 1.png-b1b72e9f319ce7a3af2d2b3ee9f05536.ctex::
 Black Asha - attack 2.png::CompressedTexture2D::2174252611120345491::1783042301::1783042634::1::::<><><>0<>0<>b69fec0b10efac8054ec401454793ba9<>res://.godot/imported/Black Asha - attack 2.png-f05d9c3be0970c74541e55c6be69a00a.ctex::
@@ -51,21 +51,22 @@ wall tiles.png::CompressedTexture2D::4216192830740165500::1782589427::1782589450
 state_machine.tscn::PackedScene::5921811491587242954::1783046990::0::1::::<><><>0<>0<><>::uid://cco40naybhrrs::::res://Scripts/Components/state_machine.gd
 ::res://Scenes/::1782676295
 zona_inicial.tscn::PackedScene::858706494883712533::1782676295::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://dhptrcm8n70wj::::res://Assets/Objects/objects.tres<>uid://b1y6eysmgglaf::::res://Scenes/Characters/player.tscn
-::res://Scenes/Characters/::1783047443
-player.tscn::PackedScene::4262766343251132225::1783047472::0::1::::<><><>0<>0<><>::uid://dnntethdcypbq::::res://Scripts/Characters/player.gd<>uid://drn4f2mwdarc6::::res://Assets/Character/Asha/asha_sprite_frames.tres<>uid://cqmtmt2t3igas::::res://Components/state_machine.tscn<>uid://b77eugo2lx05e::::res://Scripts/Characters/player_idle.gd
+::res://Scenes/Characters/::1783049229
+player.tscn::PackedScene::4262766343251132225::1783049229::0::1::::<><><>0<>0<><>::uid://dnntethdcypbq::::res://Scripts/Characters/player.gd<>uid://drn4f2mwdarc6::::res://Assets/Character/Asha/asha_sprite_frames.tres<>uid://cqmtmt2t3igas::::res://Components/state_machine.tscn<>uid://co0d84e1gn7qs::::res://Scripts/Characters/PlayerStates/player_state_idle.gd<>uid://dd0hvocwna3ng::::res://Scripts/Characters/PlayerStates/player_state_walk.gd
 ::res://Scenes/Characters/Enemies/::1783043549
 zombie.tscn::PackedScene::6824177816554871432::1783043549::0::1::::<><><>0<>0<><>::uid://d3xfgb40bt2g6::::res://Scripts/Characters/zombie.gd<>uid://duwwl7g7r2mxf::::res://Assets/Character/Zombie/zombie_sprite_frames.tres
 ::res://Scenes/Object/::1782697023
 coin.tscn::PackedScene::5195810660358037898::1782697023::0::1::::<><><>0<>0<><>::uid://cjdb50sfyyd1g::::res://Assets/Objects/Coins tiles.png<>uid://d32hw8qbbv1eu::::res://Scripts/Objects/coin.gd
 ::res://Scripts/::1783045468
-::res://Scripts/Characters/::1783047443
-player.gd::GDScript::8099715704111906926::1783043415::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/Characters/::1783049044
+player.gd::GDScript::8099715704111906926::1783049044::0::1::::<>CharacterBody2D<><>0<>0<><>::
 zombie.gd::GDScript::9172344759475524831::1782786958::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scripts/Characters/PlayerStates/::0
-player_idle.gd::GDScript::4698802690098966700::1783047443::0::1::::<>StateBase<><>0<>0<><>::
-::res://Scripts/Components/::1783047217
-state_machine.gd::GDScript::4943926464752587360::1783047217::0::1::::StateMachine<>Node<><>0<>0<><>::
-state_base.gd::GDScript::7299076660654801642::1783046990::0::1::::StateBase<>Node<><>0<>0<><>::
+::res://Scripts/Characters/PlayerStates/::1783049229
+player_state_idle.gd::GDScript::5807337234893570234::1783049223::0::1::::<>StateBase<><>0<>0<><>::
+player_state_walk.gd::GDScript::7421901285899758144::1783049229::0::1::::<>StateBase<><>0<>0<><>::
+::res://Scripts/Components/::1783049122
+state_base.gd::GDScript::7299076660654801642::1783047602::0::1::::StateBase<>Node<><>0<>0<><>::
+state_machine.gd::GDScript::4943926464752587360::1783049122::0::1::::StateMachine<>Node<><>0<>0<><>::
 ::res://Scripts/Map/::1782678563
 column_generator.gd::GDScript::7430853881570368527::1782678563::0::1::::ColumnGenerator<>Node<><>0<>1<><>::
 floor_generador.gd::GDScript::6625900229533094793::1782596158::0::1::::FloorGenerator<>Node<><>0<>1<><>::
