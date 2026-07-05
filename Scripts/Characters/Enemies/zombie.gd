@@ -12,6 +12,7 @@ extends CharacterBody2D
 @export_category("Combat")
 @export var max_health: float = 100.0
 @export var knockback_friction: float = 800.0
+@export var hit_damage: float = 10.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var timer: Timer = $Timer

@@ -1,10 +1,10 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1783217045
+::res://::1783224995
 icon.svg::CompressedTexture2D::1162303183147795495::1782510460::1782510474::1::::<><><>0<>0<>e5e34f6b644e55ae69c0f4955d68fe50<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1782591201
 ::res://Assets/Character/::1783042259
-::res://Assets/Character/Asha/::1783201296
-asha_sprite_frames.tres::SpriteFrames::8381080463160097687::1783201296::0::1::::<><><>0<>0<><>::uid://dibqpcfhvrl1x::::res://Assets/Character/Asha/Black/Black Asha - idle.png<>uid://3cqiya200uei::::res://Assets/Character/Asha/Black/Black Asha - attack 3.png<>uid://c5qgb544q176l::::res://Assets/Character/Asha/Black/Black Asha - walk.png
+::res://Assets/Character/Asha/::1783217094
+asha_sprite_frames.tres::SpriteFrames::8381080463160097687::1783217094::0::1::::<><><>0<>0<><>::uid://dibqpcfhvrl1x::::res://Assets/Character/Asha/Black/Black Asha - idle.png<>uid://3cqiya200uei::::res://Assets/Character/Asha/Black/Black Asha - attack 3.png<>uid://c5qgb544q176l::::res://Assets/Character/Asha/Black/Black Asha - walk.png
 ::res://Assets/Character/Asha/Black/::1783042804
 Black Asha - attack 1.png::CompressedTexture2D::45027003774177113::1783042301::1783042617::1::::<><><>0<>0<>fdf5f67dca09629990f0018886522ee1<>res://.godot/imported/Black Asha - attack 1.png-b1b72e9f319ce7a3af2d2b3ee9f05536.ctex::
 Black Asha - attack 2.png::CompressedTexture2D::2174252611120345491::1783042301::1783042634::1::::<><><>0<>0<>b69fec0b10efac8054ec401454793ba9<>res://.godot/imported/Black Asha - attack 2.png-f05d9c3be0970c74541e55c6be69a00a.ctex::
@@ -32,20 +32,20 @@ Blue Knight - run.png::CompressedTexture2D::5981806704636162293::1716138589::178
 Green Knight - idle.png::CompressedTexture2D::2659323389912741367::1782591515::1783042154::1::::<><><>0<>0<>d00d2c46d7f9febd7a9c570afa7c64e1<>res://.godot/imported/Green Knight - idle.png-136e3ed6ca40c4c7a30981e87ce61688.ctex::
 Green Knight - run no arms.png::CompressedTexture2D::1318151004891405823::1782591515::1783042186::1::::<><><>0<>0<>9e2817aa6143828227f5f6fa6c8758ff<>res://.godot/imported/Green Knight - run no arms.png-f4672ce88f31185c6a0d7084aa19d5bb.ctex::
 Green Knight - run.png::CompressedTexture2D::7420523684517583604::1782591515::1783042165::1::::<><><>0<>0<>e87eeea55748d661bc4d21b4df0bc741<>res://.godot/imported/Green Knight - run.png-b09dc019464d24f07309b8a7344e2875.ctex::
-::res://Assets/Character/Zombie/::1783206793
+::res://Assets/Character/Zombie/::1783217094
 Zombie-Death.png::CompressedTexture2D::3019283583807915148::1782682533::1782682542::1::::<><><>0<>0<>24a609b8d720665d361f860c3d42e0de<>res://.godot/imported/Zombie-Death.png-04bb3e03d86c1050160c1ed15afa5996.ctex::
 Zombie-Hurt.png::CompressedTexture2D::2156492104985259358::1782682356::1782682368::1::::<><><>0<>0<>5eee2387372e52ec44045e8d5103d1fd<>res://.godot/imported/Zombie-Hurt.png-841478c55e5412aa82494df7b6438279.ctex::
 Zombie-Idle.png::CompressedTexture2D::5656796427825867001::1782680368::1782680378::1::::<><><>0<>0<>43e31b3ff764a5c38c3bc2fff8bdf873<>res://.godot/imported/Zombie-Idle.png-6fb74f618e1f3a2964886fd936995d13.ctex::
 Zombie-Run.png::CompressedTexture2D::2666139279725655181::1782682197::1782682206::1::::<><><>0<>0<>67316eb444db3b1991ac42f3a85bc121<>res://.godot/imported/Zombie-Run.png-e90937fde300399b8b0995416baf1401.ctex::
-zombie_sprite_frames.tres::SpriteFrames::8609812343496840235::1783206793::0::1::::<><><>0<>0<><>::uid://bjatfonc5c6qa::::res://Assets/Character/Zombie/Zombie-Death.png<>uid://5yvd0bts4po5::::res://Assets/Character/Zombie/Zombie-Hurt.png<>uid://cmugu074ye3f6::::res://Assets/Character/Zombie/Zombie-Idle.png<>uid://bd8q6ou8mtxm8::::res://Assets/Character/Zombie/Zombie-Run.png
+zombie_sprite_frames.tres::SpriteFrames::8609812343496840235::1783217094::0::1::::<><><>0<>0<><>::uid://bjatfonc5c6qa::::res://Assets/Character/Zombie/Zombie-Death.png<>uid://5yvd0bts4po5::::res://Assets/Character/Zombie/Zombie-Hurt.png<>uid://cmugu074ye3f6::::res://Assets/Character/Zombie/Zombie-Idle.png<>uid://bd8q6ou8mtxm8::::res://Assets/Character/Zombie/Zombie-Run.png
 ::res://Assets/Objects/::1782678694
 Coins tiles.png::CompressedTexture2D::5410849725351016166::1782619745::1782619764::1::::<><><>0<>0<>3b8a218239ae6395b2edd31d4b31f6be<>res://.godot/imported/Coins tiles.png-e91ea33990f5056925af4640d15d08b7.ctex::
 objects.tres::TileSet::7682733729317754569::1782678694::0::1::::<><><>0<>0<><>::uid://v7mdx3yebe8j::::res://Assets/Objects/Pilars tiles.png
 Pilars tiles.png::CompressedTexture2D::1540761018210922691::1782591412::1782591425::1::::<><><>0<>0<>ed7295581985b5532360acf0e30305d4<>res://.godot/imported/Pilars tiles.png-043c5a94f89355c39c74141b9833f1cb.ctex::
-::res://Assets/Tiles/::1783200232
+::res://Assets/Tiles/::1783217094
 extra tiles.png::CompressedTexture2D::5016297210283680944::1782594075::1782594085::1::::<><><>0<>0<>9e00b3144a5183efabf550f9af25b177<>res://.godot/imported/extra tiles.png-2cacef4f8258688f8204449bcad7e3e6.ctex::
 floor tiles set.png::CompressedTexture2D::8512878983293942020::1782587586::1782587600::1::::<><><>0<>0<>db0829230b41e168b704ea80d3917a4f<>res://.godot/imported/floor tiles set.png-92006c8abf22d92a99565283ea9cc2a4.ctex::
-mazmorra.tres::TileSet::2995547876098541020::1783200232::0::1::::<><><>0<>0<><>::uid://dtjx4xkvhaqum::::res://Assets/Tiles/floor tiles set.png<>uid://b1cmcynr0k133::::res://Assets/Tiles/wall tiles.png<>uid://cdp6xgt0hhks3::::res://Assets/Tiles/extra tiles.png
+mazmorra.tres::TileSet::2995547876098541020::1783217094::0::1::::<><><>0<>0<><>::uid://dtjx4xkvhaqum::::res://Assets/Tiles/floor tiles set.png<>uid://b1cmcynr0k133::::res://Assets/Tiles/wall tiles.png<>uid://cdp6xgt0hhks3::::res://Assets/Tiles/extra tiles.png
 wall tiles.png::CompressedTexture2D::4216192830740165500::1782589427::1782589450::1::::<><><>0<>0<>40068a16d43c994903a0155e7825a7de<>res://.godot/imported/wall tiles.png-98333bb06ae89cceef9c9fc25d27f949.ctex::
 ::res://Components/::1783203155
 hit_component.tscn::PackedScene::2476376708604212432::1783203155::0::1::::<><><>0<>0<><>::
@@ -53,29 +53,30 @@ hurt_component.tscn::PackedScene::8607334434575609890::1783202912::0::1::::<><><
 state_machine.tscn::PackedScene::5921811491587242954::1783046990::0::1::::<><><>0<>0<><>::uid://cco40naybhrrs::::res://Scripts/Components/state_machine.gd
 ::res://Scenes/::1782676295
 zona_inicial.tscn::PackedScene::858706494883712533::1782676295::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://dhptrcm8n70wj::::res://Assets/Objects/objects.tres<>uid://b1y6eysmgglaf::::res://Scenes/Characters/player.tscn
-::res://Scenes/Characters/::1783205888
-player.tscn::PackedScene::4262766343251132225::1783205888::0::1::::<><><>0<>0<><>::uid://dnntethdcypbq::::res://Scripts/Characters/PlayerStates/player.gd<>uid://drn4f2mwdarc6::::res://Assets/Character/Asha/asha_sprite_frames.tres<>uid://cqmtmt2t3igas::::res://Components/state_machine.tscn<>uid://co0d84e1gn7qs::::res://Scripts/Characters/PlayerStates/player_state_idle.gd<>uid://dd0hvocwna3ng::::res://Scripts/Characters/PlayerStates/player_state_walk.gd<>uid://ck85dxgso666j::::res://Scripts/Characters/PlayerStates/player_state_attack.gd<>uid://bbjttel68x5dk::::res://Components/hit_component.tscn
-::res://Scenes/Characters/Enemies/::1783206867
-zombie.tscn::PackedScene::6824177816554871432::1783206867::0::1::::<><><>0<>0<><>::uid://d3xfgb40bt2g6::::res://Scripts/Characters/Enemies/zombie.gd<>uid://duwwl7g7r2mxf::::res://Assets/Character/Zombie/zombie_sprite_frames.tres<>uid://duvpsm6mdgi0q::::res://Components/hurt_component.tscn<>uid://cqmtmt2t3igas::::res://Components/state_machine.tscn<>uid://dh1bv28buqpc0::::res://Scripts/Characters/Enemies/enemy_state_patrol.gd<>uid://xpdv266gchjh::::res://Scripts/Characters/Enemies/enemy_state_chase.gd<>uid://bmrbqb1ahon7v::::res://Scripts/Characters/Enemies/enemy_state_investigate.gd<>uid://bbq1ofj7o8su::::res://Scripts/Characters/Enemies/enemy_state_idle.gd<>uid://2jaelt7snilp::::res://Scripts/Characters/Enemies/enemy_state_hurt.gd
+::res://Scenes/Characters/::1783220169
+player.tscn::PackedScene::4262766343251132225::1783220169::0::1::::<><><>0<>0<><>::uid://dnntethdcypbq::::res://Scripts/Characters/PlayerStates/player.gd<>uid://drn4f2mwdarc6::::res://Assets/Character/Asha/asha_sprite_frames.tres<>uid://cqmtmt2t3igas::::res://Components/state_machine.tscn<>uid://co0d84e1gn7qs::::res://Scripts/Characters/PlayerStates/player_state_idle.gd<>uid://dd0hvocwna3ng::::res://Scripts/Characters/PlayerStates/player_state_walk.gd<>uid://ck85dxgso666j::::res://Scripts/Characters/PlayerStates/player_state_attack.gd<>uid://bbjttel68x5dk::::res://Components/hit_component.tscn
+::res://Scenes/Characters/Enemies/::1783221151
+zombie.tscn::PackedScene::6824177816554871432::1783221151::0::1::::<><><>0<>0<><>::uid://d3xfgb40bt2g6::::res://Scripts/Characters/Enemies/zombie.gd<>uid://duwwl7g7r2mxf::::res://Assets/Character/Zombie/zombie_sprite_frames.tres<>uid://duvpsm6mdgi0q::::res://Components/hurt_component.tscn<>uid://cqmtmt2t3igas::::res://Components/state_machine.tscn<>uid://dh1bv28buqpc0::::res://Scripts/Characters/Enemies/enemy_state_patrol.gd<>uid://xpdv266gchjh::::res://Scripts/Characters/Enemies/enemy_state_chase.gd<>uid://bmrbqb1ahon7v::::res://Scripts/Characters/Enemies/enemy_state_investigate.gd<>uid://bbq1ofj7o8su::::res://Scripts/Characters/Enemies/enemy_state_idle.gd<>uid://2jaelt7snilp::::res://Scripts/Characters/Enemies/enemy_state_hurt.gd<>uid://bwg5duyofr350::::res://Scripts/Characters/Enemies/enemy_state_death.gd
 ::res://Scenes/Object/::1782697023
 coin.tscn::PackedScene::5195810660358037898::1782697023::0::1::::<><><>0<>0<><>::uid://cjdb50sfyyd1g::::res://Assets/Objects/Coins tiles.png<>uid://d32hw8qbbv1eu::::res://Scripts/Objects/coin.gd
 ::res://Scripts/::1783045468
 ::res://Scripts/Characters/::1783200042
-::res://Scripts/Characters/Enemies/::1783206723
-enemy_state_chase.gd::GDScript::1645530190071937637::1783206477::0::1::::<>StateBase<><>0<>0<><>::
-enemy_state_hurt.gd::GDScript::1913685929775675629::1783206591::0::1::::<>StateBase<><>0<>0<><>::
-enemy_state_idle.gd::GDScript::73271867421077580::1783206472::0::1::::<>StateBase<><>0<>0<><>::
+::res://Scripts/Characters/Enemies/::1783221151
+enemy_state_chase.gd::GDScript::1645530190071937637::1783219061::0::1::::<>StateBase<><>0<>0<><>::
+enemy_state_death.gd::GDScript::3944789465604668829::1783220586::0::1::::<>StateBase<><>0<>0<><>::
+enemy_state_hurt.gd::GDScript::1913685929775675629::1783221071::0::1::::<>StateBase<><>0<>0<><>::
+enemy_state_idle.gd::GDScript::73271867421077580::1783219052::0::1::::<>StateBase<><>0<>0<><>::
 enemy_state_investigate.gd::GDScript::3263870611561936361::1783206723::0::1::::<>StateBase<><>0<>0<><>::
-enemy_state_patrol.gd::GDScript::7704357465997661369::1783206467::0::1::::<>StateBase<><>0<>0<><>::
-zombie.gd::GDScript::9172344759475524831::1783131497::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Scripts/Characters/PlayerStates/::1783206224
-player.gd::GDScript::8099715704111906926::1783204123::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player_state_attack.gd::GDScript::5544682354958888635::1783206224::0::1::::<>StateBase<><>0<>0<><>::
+enemy_state_patrol.gd::GDScript::7704357465997661369::1783219046::0::1::::<>StateBase<><>0<>0<><>::
+zombie.gd::GDScript::9172344759475524831::1783221151::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/Characters/PlayerStates/::1783220169
+player.gd::GDScript::8099715704111906926::1783219271::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player_state_attack.gd::GDScript::5544682354958888635::1783220169::0::1::::<>StateBase<><>0<>0<><>::
 player_state_idle.gd::GDScript::5807337234893570234::1783203796::0::1::::<>StateBase<><>0<>0<><>::
 player_state_walk.gd::GDScript::7421901285899758144::1783200961::0::1::::<>StateBase<><>0<>0<><>::
-::res://Scripts/Components/::1783206106
+::res://Scripts/Components/::1783220424
 state_base.gd::GDScript::7299076660654801642::1783047602::0::1::::StateBase<>Node<><>0<>0<><>::
-state_machine.gd::GDScript::4943926464752587360::1783206106::0::1::::StateMachine<>Node<><>0<>0<><>::
+state_machine.gd::GDScript::4943926464752587360::1783220424::0::1::::StateMachine<>Node<><>0<>0<><>::
 ::res://Scripts/Map/::1782678563
 column_generator.gd::GDScript::7430853881570368527::1782678563::0::1::::ColumnGenerator<>Node<><>0<>1<><>::
 floor_generador.gd::GDScript::6625900229533094793::1782596158::0::1::::FloorGenerator<>Node<><>0<>1<><>::
@@ -83,12 +84,12 @@ objects_generator_scene.gd::GDScript::1203578249400775193::1782677206::0::1::::<
 wall_generator.gd::GDScript::184868695254267561::1782676949::0::1::::WallGenerator<>Node<><>0<>1<><>::
 ::res://Scripts/Objects/::1782697023
 coin.gd::GDScript::9180753936754149596::1782697023::0::1::::<>Node2D<><>0<>0<><>::
-::res://Test/::1783205825
+::res://Test/::1783221208
 caves.tscn::PackedScene::7785153265338995202::1782648904::0::1::::<><><>0<>0<><>::uid://c1nvuxxkfmpev::::res://Scripts/Map/floor_generador.gd<>uid://cvs04a2qga2d::::res://Scripts/Map/wall_generator.gd<>uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://b1y6eysmgglaf::::res://Scenes/Characters/player.tscn
 caves_columns_tiles.tscn::PackedScene::2304522709480416900::1782679401::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://c1nvuxxkfmpev::::res://Scripts/Map/floor_generador.gd<>uid://cvs04a2qga2d::::res://Scripts/Map/wall_generator.gd<>uid://dhptrcm8n70wj::::res://Assets/Objects/objects.tres<>uid://dd4tcv5ulyvy2::::res://Scripts/Map/column_generator.gd
 caves_objects.tscn::PackedScene::1189089126071550276::1782680008::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://c1nvuxxkfmpev::::res://Scripts/Map/floor_generador.gd<>uid://cvs04a2qga2d::::res://Scripts/Map/wall_generator.gd<>uid://dhptrcm8n70wj::::res://Assets/Objects/objects.tres<>uid://dd4tcv5ulyvy2::::res://Scripts/Map/column_generator.gd<>uid://rfa01fnk4mab::::res://Scripts/Map/objects_generator_scene.gd<>uid://cga5iijuh8gus::::res://Scenes/Object/coin.tscn
 coins_pickup.tscn::PackedScene::1802355321499876850::1782679788::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://cga5iijuh8gus::::res://Scenes/Object/coin.tscn<>uid://rfa01fnk4mab::::res://Scripts/Map/objects_generator_scene.gd
-combat_with_enemies.tscn::PackedScene::4255279798969484681::1783205825::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://c4hxhgvje202w::::res://Scenes/Characters/Enemies/zombie.tscn<>uid://b1y6eysmgglaf::::res://Scenes/Characters/player.tscn
+combat_with_enemies.tscn::PackedScene::4255279798969484681::1783221208::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://c4hxhgvje202w::::res://Scenes/Characters/Enemies/zombie.tscn<>uid://b1y6eysmgglaf::::res://Scenes/Characters/player.tscn
 naviation_agent_enemy.tscn::PackedScene::5435360400066182097::1783130300::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://c4hxhgvje202w::::res://Scenes/Characters/Enemies/zombie.tscn<>uid://b1y6eysmgglaf::::res://Scenes/Characters/player.tscn
 navigation_waypoints_enemy.tscn::PackedScene::518344624723387894::1783130728::0::1::::<><><>0<>0<><>::uid://bixciawn8oxkm::::res://Assets/Tiles/mazmorra.tres<>uid://c4hxhgvje202w::::res://Scenes/Characters/Enemies/zombie.tscn
 objects.tscn::PackedScene::6777217303139190246::1782680161::0::1::::<><><>0<>0<><>::uid://cga5iijuh8gus::::res://Scenes/Object/coin.tscn<>uid://b1y6eysmgglaf::::res://Scenes/Characters/player.tscn<>uid://dhptrcm8n70wj::::res://Assets/Objects/objects.tres

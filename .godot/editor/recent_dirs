@@ -1,13 +1,13 @@
-res://Scripts/Characters/Enemies/
-res://Components/
+res://Scripts/Map/
 res://Assets/Character/Asha/Black/
 res://Scripts/Characters/PlayerStates/
+res://Scripts/Characters/Enemies/
+res://Components/
 res://Test/
 res://Scripts/Characters/
 res://Assets/Character/Asha/
 res://Assets/Character/Zombie/
 res://Scenes/Characters/Enemies/
-res://Scripts/Map/
 res://Assets/Objects/
 res://Scenes/Object/
 res://Scripts/Objects/

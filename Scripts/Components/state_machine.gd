@@ -12,11 +12,18 @@ var current_state: StateBase = null
 func _ready() -> void:
 	call_deferred("_state_default_start")
 	
-	if controlled_node.has_signal("damaged_enemy"):
-		controlled_node.damaged_enemy.connect(func(): change_to("EnemyStateHurt"))
-	
-	if controlled_node.has_signal("death_enemy"):
-		controlled_node.death_enemy.connect(func(): change_to("EnemyStateDeath"))
+	if controlled_node.is_in_group("enemy"):
+		if controlled_node.has_signal("damaged_enemy"):
+			controlled_node.damaged_enemy.connect(func(): change_to("EnemyStateHurt"))
+		
+		if controlled_node.has_signal("death_enemy"):
+			controlled_node.death_enemy.connect(func(): change_to("EnemyStateDeath"))
+	elif controlled_node.is_in_group("player"):
+		if controlled_node.has_signal("damaged_player"):
+			controlled_node.damaged_player.connect(func(): change_to("PlayerStateHurt"))
+		
+		if controlled_node.has_signal("death_player"):
+			controlled_node.death_player.connect(func(): change_to("PlayerStateDeath"))
 
 func _state_default_start() -> void:
 	current_state = default_state

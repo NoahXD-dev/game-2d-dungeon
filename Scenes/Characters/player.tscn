@@ -4,15 +4,21 @@
 [ext_resource type="SpriteFrames" uid="uid://drn4f2mwdarc6" path="res://Assets/Character/Asha/asha_sprite_frames.tres" id="2_40svl"]
 [ext_resource type="PackedScene" uid="uid://cqmtmt2t3igas" path="res://Components/state_machine.tscn" id="3_gy20a"]
 [ext_resource type="Script" uid="uid://co0d84e1gn7qs" path="res://Scripts/Characters/PlayerStates/player_state_idle.gd" id="4_gy20a"]
+[ext_resource type="PackedScene" uid="uid://duvpsm6mdgi0q" path="res://Components/hurt_component.tscn" id="4_xo8ps"]
 [ext_resource type="Script" uid="uid://dd0hvocwna3ng" path="res://Scripts/Characters/PlayerStates/player_state_walk.gd" id="5_cqrjx"]
 [ext_resource type="Script" uid="uid://ck85dxgso666j" path="res://Scripts/Characters/PlayerStates/player_state_attack.gd" id="6_khnq4"]
 [ext_resource type="PackedScene" uid="uid://bbjttel68x5dk" path="res://Components/hit_component.tscn" id="7_utp2y"]
+[ext_resource type="Script" uid="uid://bmfbu18nv5icq" path="res://Scripts/Characters/PlayerStates/player_state_hurt.gd" id="8_gdgf0"]
+[ext_resource type="Script" uid="uid://gdqxtgitwyq3" path="res://Scripts/Characters/PlayerStates/player_state_death.gd" id="10_fcmex"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hk1vj"]
 radius = 3.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u5bk5"]
 radius = 4.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kddjp"]
+radius = 7.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1432425149 groups=["player"]]
 y_sort_enabled = true
@@ -23,7 +29,7 @@ script = ExtResource("1_jrspi")
 y_sort_enabled = true
 position = Vector2(0, -5)
 sprite_frames = ExtResource("2_40svl")
-animation = &"attack_black_down"
+animation = &"idle_black_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1798629179]
 shape = SubResource("CircleShape2D_hk1vj")
@@ -42,6 +48,15 @@ position_smoothing_speed = 12.0
 shape = SubResource("CircleShape2D_u5bk5")
 disabled = true
 
+[node name="PlayerHurtComponent" parent="." unique_id=261496791 instance=ExtResource("4_xo8ps")]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHurtComponent" unique_id=1923020965]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_kddjp")
+debug_color = Color(0, 0.646125, 0.25166267, 0.41960785)
+
 [node name="StateMachine" parent="." unique_id=1751848432 node_paths=PackedStringArray("default_state") instance=ExtResource("3_gy20a")]
 default_state = NodePath("PlayerStateIdle")
 
@@ -56,3 +71,13 @@ metadata/_custom_type_script = "uid://db8yyxqjh5d75"
 [node name="PlayerStateAttack" type="Node" parent="StateMachine" unique_id=54731152]
 script = ExtResource("6_khnq4")
 metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[node name="PlayerStateHurt" type="Node" parent="StateMachine" unique_id=1569281665]
+script = ExtResource("8_gdgf0")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[node name="PlayerStateDeath" type="Node" parent="StateMachine" unique_id=39924419]
+script = ExtResource("10_fcmex")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[connection signal="body_entered" from="PlayerHurtComponent" to="." method="_on_player_hurt_component_body_entered"]

@@ -1,6 +1,6 @@
 extends StateBase
 
-func start():	
+func start():
 	# 1. Detener por completo el movimiento del enemigo para que acuse el golpe
 	controlled_node.set_movement_state(Vector2.ZERO)
 	

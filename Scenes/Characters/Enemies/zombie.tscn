@@ -11,8 +11,9 @@
 [ext_resource type="Script" uid="uid://2jaelt7snilp" path="res://Scripts/Characters/Enemies/enemy_state_hurt.gd" id="9_8xd1p"]
 [ext_resource type="Script" uid="uid://bwg5duyofr350" path="res://Scripts/Characters/Enemies/enemy_state_death.gd" id="10_60782"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_al8ar"]
-radius = 3.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fcmex"]
+radius = 4.0
+height = 16.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u5bk5"]
 radius = 7.0
@@ -35,7 +36,8 @@ animation = &"idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1240715354]
 y_sort_enabled = true
-shape = SubResource("CircleShape2D_al8ar")
+position = Vector2(0, -4)
+shape = SubResource("CapsuleShape2D_fcmex")
 debug_color = Color(0.8756944, 0.00042624594, 0.8363707, 0.41960785)
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=468636351]
