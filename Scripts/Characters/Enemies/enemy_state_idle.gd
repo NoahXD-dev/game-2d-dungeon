@@ -10,7 +10,6 @@ func on_physics_process(_delta: float) -> void:
 		state_machine.change_to("EnemyStateChase")
 		return
 
-
 func on_timer_timeout() -> void:
 	# El timer terminó, pasamos a patrullar al siguiente waypoint
 	if controlled_node.waypoints.size() > 0:

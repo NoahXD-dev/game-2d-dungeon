@@ -1,15 +1,21 @@
 [gd_scene format=3 uid="uid://c4hxhgvje202w"]
 
-[ext_resource type="Script" uid="uid://d3xfgb40bt2g6" path="res://Scripts/Characters/zombie.gd" id="1_hk1vj"]
+[ext_resource type="Script" uid="uid://d3xfgb40bt2g6" path="res://Scripts/Characters/Enemies/zombie.gd" id="1_hk1vj"]
 [ext_resource type="SpriteFrames" uid="uid://duwwl7g7r2mxf" path="res://Assets/Character/Zombie/zombie_sprite_frames.tres" id="2_7sk10"]
+[ext_resource type="PackedScene" uid="uid://duvpsm6mdgi0q" path="res://Components/hurt_component.tscn" id="3_6btmv"]
 [ext_resource type="PackedScene" uid="uid://cqmtmt2t3igas" path="res://Components/state_machine.tscn" id="3_hk1vj"]
 [ext_resource type="Script" uid="uid://dh1bv28buqpc0" path="res://Scripts/Characters/Enemies/enemy_state_patrol.gd" id="4_8qepe"]
 [ext_resource type="Script" uid="uid://xpdv266gchjh" path="res://Scripts/Characters/Enemies/enemy_state_chase.gd" id="5_xyh2p"]
 [ext_resource type="Script" uid="uid://bmrbqb1ahon7v" path="res://Scripts/Characters/Enemies/enemy_state_investigate.gd" id="6_8qepe"]
 [ext_resource type="Script" uid="uid://bbq1ofj7o8su" path="res://Scripts/Characters/Enemies/enemy_state_idle.gd" id="7_xyh2p"]
+[ext_resource type="Script" uid="uid://2jaelt7snilp" path="res://Scripts/Characters/Enemies/enemy_state_hurt.gd" id="9_8xd1p"]
+[ext_resource type="Script" uid="uid://bwg5duyofr350" path="res://Scripts/Characters/Enemies/enemy_state_death.gd" id="10_60782"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_al8ar"]
 radius = 3.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u5bk5"]
+radius = 7.0
 
 [node name="Zombie" type="CharacterBody2D" unique_id=1984377480 groups=["enemy"]]
 y_sort_enabled = true
@@ -18,7 +24,6 @@ collision_mask = 10
 motion_mode = 1
 wall_min_slide_angle = 0.0
 script = ExtResource("1_hk1vj")
-speed = 80.0
 angle_vision = 120.0
 lenght_cone_vision = 80.0
 
@@ -46,6 +51,14 @@ radius = 3.0
 debug_enabled = true
 debug_path_custom_color = Color(0.55531013, 0.5200199, 5.7756904e-07, 1)
 
+[node name="HurtComponent" parent="." unique_id=261496791 instance=ExtResource("3_6btmv")]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent" unique_id=478935282]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_u5bk5")
+
 [node name="StateMachine" parent="." unique_id=1751848432 node_paths=PackedStringArray("default_state") instance=ExtResource("3_hk1vj")]
 default_state = NodePath("EnemyStatePatrol")
 
@@ -65,4 +78,13 @@ metadata/_custom_type_script = "uid://db8yyxqjh5d75"
 script = ExtResource("7_xyh2p")
 metadata/_custom_type_script = "uid://db8yyxqjh5d75"
 
+[node name="EnemyStateHurt" type="Node" parent="StateMachine" unique_id=103217453]
+script = ExtResource("9_8xd1p")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[node name="EnemyStateDeath" type="Node" parent="StateMachine" unique_id=660452813]
+script = ExtResource("10_60782")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
 [connection signal="timeout" from="Timer" to="StateMachine" method="_on_timer_timeout"]
+[connection signal="area_entered" from="HurtComponent" to="." method="_on_hurt_component_area_entered"]

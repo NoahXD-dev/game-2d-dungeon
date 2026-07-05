@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bbjttel68x5dk"]
+
+[node name="HitComponent" type="Area2D" unique_id=628643352]
+collision_layer = 16
+collision_mask = 12

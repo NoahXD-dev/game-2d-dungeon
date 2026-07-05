@@ -15,6 +15,9 @@ func on_physics_process(_delta: float) -> void:
 		if controlled_node.waypoints.size() > 0:
 			state_machine.change_to("EnemyStatePatrol")
 			return
+		
+		state_machine.change_to("EnemyStateIdle")
+		return
 	
 	# Avanzamos a la ultima posicion del jugador
 	var next_pos = agent.get_next_path_position()

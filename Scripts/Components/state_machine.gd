@@ -11,6 +11,12 @@ var current_state: StateBase = null
 
 func _ready() -> void:
 	call_deferred("_state_default_start")
+	
+	if controlled_node.has_signal("damaged_enemy"):
+		controlled_node.damaged_enemy.connect(func(): change_to("EnemyStateHurt"))
+	
+	if controlled_node.has_signal("death_enemy"):
+		controlled_node.death_enemy.connect(func(): change_to("EnemyStateDeath"))
 
 func _state_default_start() -> void:
 	current_state = default_state
@@ -18,7 +24,7 @@ func _state_default_start() -> void:
 
 # Funcion que prepara las variables para el nuevo estado y lanza el start
 func _state_start() -> void:
-	#print("StateMachine ", controlled_node.name, "start state ", current_state.name)
+	# print("StateMachine ", controlled_node.name, "start state ", current_state.name)
 	
 	current_state.controlled_node = controlled_node
 	current_state.state_machine = self

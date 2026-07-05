@@ -548,7 +548,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"hurt_down",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -559,7 +559,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"hurt_left",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -570,7 +570,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"hurt_right",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -579,7 +579,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_87fgc")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"hurt_up",
 "speed": 5.0
 }, {

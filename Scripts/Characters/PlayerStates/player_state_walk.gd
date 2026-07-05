@@ -1,6 +1,10 @@
 extends StateBase
 
 func on_physics_process(_delta: float) -> void:
+	if Input.is_action_pressed("click_left"):
+		state_machine.change_to("PlayerStateAttack")
+		return
+	
 	var input_direction: Vector2 = Input.get_vector("left", "right", "up", "down")
 	
 	if input_direction == Vector2.ZERO:

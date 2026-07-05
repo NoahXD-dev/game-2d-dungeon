@@ -1,13 +1,18 @@
 [gd_scene format=3 uid="uid://b1y6eysmgglaf"]
 
-[ext_resource type="Script" uid="uid://dnntethdcypbq" path="res://Scripts/Characters/player.gd" id="1_jrspi"]
+[ext_resource type="Script" uid="uid://dnntethdcypbq" path="res://Scripts/Characters/PlayerStates/player.gd" id="1_jrspi"]
 [ext_resource type="SpriteFrames" uid="uid://drn4f2mwdarc6" path="res://Assets/Character/Asha/asha_sprite_frames.tres" id="2_40svl"]
 [ext_resource type="PackedScene" uid="uid://cqmtmt2t3igas" path="res://Components/state_machine.tscn" id="3_gy20a"]
 [ext_resource type="Script" uid="uid://co0d84e1gn7qs" path="res://Scripts/Characters/PlayerStates/player_state_idle.gd" id="4_gy20a"]
 [ext_resource type="Script" uid="uid://dd0hvocwna3ng" path="res://Scripts/Characters/PlayerStates/player_state_walk.gd" id="5_cqrjx"]
+[ext_resource type="Script" uid="uid://ck85dxgso666j" path="res://Scripts/Characters/PlayerStates/player_state_attack.gd" id="6_khnq4"]
+[ext_resource type="PackedScene" uid="uid://bbjttel68x5dk" path="res://Components/hit_component.tscn" id="7_utp2y"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hk1vj"]
 radius = 3.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u5bk5"]
+radius = 4.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1432425149 groups=["player"]]
 y_sort_enabled = true
@@ -18,8 +23,7 @@ script = ExtResource("1_jrspi")
 y_sort_enabled = true
 position = Vector2(0, -5)
 sprite_frames = ExtResource("2_40svl")
-animation = &"idle_black_down"
-autoplay = "idle_black_down"
+animation = &"attack_black_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1798629179]
 shape = SubResource("CircleShape2D_hk1vj")
@@ -32,6 +36,12 @@ limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 12.0
 
+[node name="PlayerHitComponent" parent="." unique_id=628643352 instance=ExtResource("7_utp2y")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHitComponent" unique_id=315114669]
+shape = SubResource("CircleShape2D_u5bk5")
+disabled = true
+
 [node name="StateMachine" parent="." unique_id=1751848432 node_paths=PackedStringArray("default_state") instance=ExtResource("3_gy20a")]
 default_state = NodePath("PlayerStateIdle")
 
@@ -41,4 +51,8 @@ metadata/_custom_type_script = "uid://db8yyxqjh5d75"
 
 [node name="PlayerStateIdle" type="Node" parent="StateMachine" unique_id=270337022]
 script = ExtResource("4_gy20a")
+metadata/_custom_type_script = "uid://db8yyxqjh5d75"
+
+[node name="PlayerStateAttack" type="Node" parent="StateMachine" unique_id=54731152]
+script = ExtResource("6_khnq4")
 metadata/_custom_type_script = "uid://db8yyxqjh5d75"
