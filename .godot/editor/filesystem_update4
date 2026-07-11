@@ -1,14 +1,4 @@
-res://Scenes/Characters/player.tscn
 res://Assets/Character/Zombie/zombie_sprite_frames.tres
 res://Assets/Character/Asha/asha_sprite_frames.tres
 res://Assets/Tiles/mazmorra.tres
-res://Scripts/Characters/PlayerStates/player_state_hurt.gd
-res://Scripts/Characters/PlayerStates/player.gd
-res://Test/combat_with_enemies.tscn
-res://Scripts/Characters/Enemies/zombie.gd
-res://Scripts/Components/state_machine.gd
-res://Scripts/Characters/Enemies/enemy_state_hurt.gd
-res://Scripts/Characters/PlayerStates/player_state_death.gd
-res://Scenes/Characters/Enemies/zombie.tscn
-res://Test/spawner_enemies.tscn
-res://Scripts/Map/spawner_enemies.gd
+res://Test/water.tscn
